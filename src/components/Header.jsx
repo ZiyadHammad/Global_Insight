@@ -3,16 +3,16 @@ import lightMoon from "../assets/moon-outline.svg";
 
 const Header = ({ theme, toggleTheme }) => {
   return (
-    <header className="flex justify-between h-32 items-center shadow-md sm:px-5">
-      <h1 className="font-bold ">Where in the World?</h1>
-      <div className="flex justify-evenly">
+    <header className="flex justify-between h-32 items-center shadow-md sm:px-4 ">
+      <h1 className="font-bold text-lg dark:text-darkTxt">Where in the World?</h1>
+      <div className="flex justify-between items-center">
         <img
           src={theme === "dark" ? darkMoon : lightMoon}
           alt="moon-icon"
           onClick={toggleTheme}
-          className="h-6 w-6"
+          className="h-4 w-4 mx-2 dark:invert"
         />
-        <h1 onClick={toggleTheme} className="">
+        <h1 onClick={toggleTheme} className="font-normal dark:text-darkTxt">
           {`${theme[0].toUpperCase() + theme.slice(1)} Mode`}
         </h1>
       </div>
