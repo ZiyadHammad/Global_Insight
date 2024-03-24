@@ -1,9 +1,9 @@
 import { Header, SearchBar, CountryCard } from "../components";
 
 import { useTheme } from "../hooks/useTheme";
-import countries from "../assets/data.json";
 
-const Landing = () => {
+
+const Landing = ({countries}) => {
   const { theme, toggleTheme } = useTheme();
   // console.log(`theme: ${theme}`, `Local Storage: ${localStorage.theme}`)
   return (

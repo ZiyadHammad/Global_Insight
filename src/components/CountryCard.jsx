@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CountryCard = ({ country }) => {
   return (
     <Link
-      to="/details"
+      to="details"
       className="max-w-64 shadow-md rounded-md m-10 dark:bg-darkEl dark:text-darkTxt"
     >
       <img
