@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 
 const CountryCard = ({ country }) => {
-  console.log(country)
   return (
     <Link
       to={`details/${country.alpha3Code}`}
-      className="max-w-64 shadow-md rounded-md m-10 dark:bg-darkEl dark:text-darkTxt"
+      className="max-w-64 min-h-80 shadow-md rounded-md m-10 dark:bg-darkEl dark:text-darkTxt"
     >
       <img
         className="rounded-md w-full h-44"
@@ -13,18 +12,18 @@ const CountryCard = ({ country }) => {
         alt="flag"
       />
 
-      <div className="flex flex-col p-4">
-        <h3 className="py-2 font-bold ">{country.name}</h3>
-        <p className="text-sm text-textColor">
-          <span className="font-medium pr-1">Region:</span>
+      <div className="flex flex-col mx-6 my-4 px-2 py-4">
+        <h3 className="text-lg font-bold mb-2">{country.name}</h3>
+        <p className="my-0.5 text-sm text-textColor font-light">
+          <span className="font-medium">Region: </span>
           {country.region}
         </p>
-        <p className="text-sm text-textColor">
-          <span className="font-medium pr-1">Population:</span>
+        <p className="my-0.5 text-sm text-textColor font-light">
+          <span className="font-medium">Population: </span>
           {country.population}
         </p>
-        <p className="text-sm text-textColor">
-          <span className="font-medium pr-1">Capital:</span>
+        <p className="my-0.5 text-sm text-textColor font-light">
+          <span className="font-medium">Capital: </span>
           {country.capital}
         </p>
       </div>

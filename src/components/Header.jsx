@@ -1,10 +1,16 @@
 import darkMoon from "../assets/moon-filled.svg";
 import lightMoon from "../assets/moon-outline.svg";
 
+import { Link } from "react-router-dom";
+
 const Header = ({ theme, toggleTheme }) => {
   return (
     <header className="flex justify-between h-32 items-center shadow-md sm:px-4 ">
-      <h1 className="font-bold text-lg dark:text-darkTxt">Where in the World?</h1>
+      <Link to="/">
+        <h1 className="font-bold text-lg dark:text-darkTxt">
+          Where in the World?
+        </h1>
+      </Link>
       <div className="flex justify-between items-center">
         <img
           src={theme === "dark" ? darkMoon : lightMoon}

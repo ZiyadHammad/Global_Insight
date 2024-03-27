@@ -18,7 +18,7 @@ const Details = ({ countries }) => {
     <div className="bg-Light dark:bg-Dark min-h-screen min-w-screen">
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Link className="relative flex items-center text-sm mx-8 my-8" to="/">
-        <img className="h-4 w-4 absolute left-2" src={arrow} alt="arrow-icon" />
+        <img className="h-4 w-4 absolute left-4" src={arrow} alt="arrow-icon" />
         <Button label={"Back"} />
       </Link>
       <div className="">

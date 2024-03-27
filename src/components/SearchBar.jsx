@@ -6,10 +6,11 @@ const SearchBar = () => {
         <img
           src={searchIcon}
           alt="icon"
-          className="absolute h-6 w-6 left-4 p-1 "
+        className="absolute h-6 w-6 left-4 p-1 dark:invert"
+        
         />
         <input
-          className="pl-16 pr-4 py-2 w-full h-12 shadow-custom rounded-md text-sm text-gray-900"
+          className="pl-16 pr-4 py-2 w-full h-12 shadow-custom rounded-md text-sm dark:bg-darkEl"
           type="text"
           placeholder="Search for a country..."
         />
