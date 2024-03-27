@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Landing countries={countries} />,
   },
   {
-    path: 'details',
+    path: 'details/:id',
     element: <Details countries={countries}  />
   }
 ]);
