@@ -15,10 +15,10 @@ const Details = ({ countries }) => {
   }
 
   return (
-    <div className="bg-Light dark:bg-Dark">
+    <div className="bg-Light dark:bg-Dark min-h-screen min-w-screen">
       <Header theme={theme} toggleTheme={toggleTheme} />
-      <Link className="relative flex items-center  mx-4 my-8" to="/">
-        <img className="h-6 w-6 absolute left-3" src={arrow} alt="arrow-icon" />
+      <Link className="relative flex items-center text-sm mx-8 my-8" to="/">
+        <img className="h-4 w-4 absolute left-2" src={arrow} alt="arrow-icon" />
         <Button label={"Back"} />
       </Link>
       <div className="">

@@ -7,7 +7,7 @@ const Landing = ({countries}) => {
   const { theme, toggleTheme } = useTheme();
   // console.log(`theme: ${theme}`, `Local Storage: ${localStorage.theme}`)
   return (
-    <div className="bg-Light dark:bg-Dark ">
+    <div className="bg-Light dark:bg-Dark min-h-screen min-w-screen">
       <Header theme={theme} toggleTheme={toggleTheme} />
 
       <div className="flex justify-center items-center ">

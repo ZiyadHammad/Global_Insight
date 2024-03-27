@@ -1,6 +1,6 @@
 const Button = ({label}) => {
   return (
-    <button className="h-10 w-32 shadow-md font-medium" >
+    <button className="rounded-sm shadow-md font-medium w-24 h-8 flex justify-evenly items-center m-1" >
       {label}
     </button>
   )
